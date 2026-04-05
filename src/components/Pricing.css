@@ -1,0 +1,13 @@
+.price-cards { display:grid; grid-template-columns:repeat(2,1fr); gap:32px; max-width:800px; margin:0 auto; }
+.price-card { background:var(--surface-card); border:1px solid var(--border-subtle); border-radius:var(--radius-xl); padding:40px; text-align:center; position:relative; overflow:hidden; transition:var(--transition-base); }
+.price-card.popular { border-color:var(--border-glow); box-shadow:var(--shadow-glow); }
+.price-card.popular::before { content:'MOST POPULAR'; position:absolute; top:0; left:50%; transform:translateX(-50%); background:var(--gradient-cta); color:var(--surface-primary); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; padding:6px 24px; border-radius:0 0 var(--radius-sm) var(--radius-sm); }
+.price-card:hover { border-color:var(--border-glow); }
+.price-card h3 { font-family:var(--font-display); font-size:1.4rem; font-weight:800; margin-bottom:8px; }
+.price { font-family:var(--font-display); font-size:2.2rem; font-weight:900; background:var(--gradient-cta); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; margin-bottom:20px; }
+.price small { font-size:0.85rem; font-weight:500; -webkit-text-fill-color:var(--text-muted); }
+.price-card .features { text-align:left; margin-bottom:24px; list-style:none; }
+.price-card .features li { display:flex; align-items:center; gap:10px; padding:8px 0; font-size:0.9rem; color:var(--text-secondary); border-bottom:1px solid rgba(255,255,255,0.03); }
+.price-card .features li svg { color:var(--brand-green); flex-shrink:0; }
+
+@media(max-width:768px) { .price-cards { grid-template-columns:1fr; } }

@@ -1,0 +1,12 @@
+.trust-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+.trust-card { background:var(--surface-card); border:1px solid var(--border-subtle); border-radius:var(--radius-lg); padding:32px; transition:var(--transition-base); }
+.trust-card:hover { border-color:var(--border-glow); box-shadow:var(--shadow-glow); }
+.stars { display:flex; gap:4px; margin-bottom:16px; color:#fbbf24; }
+.trust-card blockquote { font-size:0.95rem; line-height:1.7; color:var(--text-secondary); margin-bottom:20px; font-style:italic; }
+.reviewer { display:flex; align-items:center; gap:12px; }
+.reviewer-avatar { width:42px; height:42px; border-radius:50%; background:var(--gradient-cta); display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:700; font-size:0.9rem; color:var(--surface-primary); }
+.reviewer-info .name { font-family:var(--font-display); font-weight:700; font-size:0.9rem; }
+.reviewer-info .role { font-size:0.78rem; color:var(--text-muted); }
+
+@media(max-width:1024px) { .trust-grid { grid-template-columns:1fr 1fr; } }
+@media(max-width:768px) { .trust-grid { grid-template-columns:1fr; } }
