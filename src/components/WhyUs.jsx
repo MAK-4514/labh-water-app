@@ -14,7 +14,7 @@ export default function WhyUs() {
       <div className="container">
         <div className="why-grid">
           <motion.div className="why-image" initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
-            <img src="/assets/images/quality-lab.png" alt="Quality lab" />
+            <img src={`${import.meta.env.BASE_URL}assets/images/quality-lab.png`} alt="Quality lab" />
             <div className="image-overlay"><span>🔬 BIS Certified Lab Testing</span></div>
           </motion.div>
           <motion.div className="why-features" initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>

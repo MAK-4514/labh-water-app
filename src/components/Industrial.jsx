@@ -30,7 +30,7 @@ export default function Industrial() {
             </div>
           </motion.div>
           <motion.div className="industrial-image" initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
-            <img src="/assets/images/industrial-plant.png" alt="Industrial plant" />
+            <img src={`${import.meta.env.BASE_URL}assets/images/industrial-plant.png`} alt="Industrial plant" />
             <div className="capacity-badge"><div className="number">20K+</div><div className="label">Litres / Day</div></div>
           </motion.div>
         </div>

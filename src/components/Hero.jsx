@@ -24,7 +24,7 @@ export default function Hero() {
   return (
     <section className="hero" id="home">
       <div className="hero-bg">
-        <img ref={imgRef} src="/assets/images/hero-bg.png" alt="Premium water" />
+        <img ref={imgRef} src={`${import.meta.env.BASE_URL}assets/images/hero-bg.png`} alt="Premium water" />
       </div>
       <div className="container">
         <motion.div
